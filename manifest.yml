@@ -1,11 +1,12 @@
-  applications:
-  - name: onlinecourse
-    routes:
-      - route: host.domain
-    memory: 128M
-    buildpack: python_buildpack
-  - name: onlinecourse-nginx
-    routes:
-      - route: host.domain/static
-    memory: 128M
-    buildpack: staticfile_buildpack
+---
+applications:
+- name: onlinecourse
+  routes:
+    - route: cv-2022-sentiment-analyzer-anxious-gnu-uf.mybluemix.net
+  memory: 128M
+  buildpack: python_buildpack
+- name: onlinecourse-nginx
+  routes:
+    - route: cv-2022-sentiment-analyzer-anxious-gnu-uf.mybluemix.net/static
+  memory: 128M
+  buildpack: staticfile_buildpack
