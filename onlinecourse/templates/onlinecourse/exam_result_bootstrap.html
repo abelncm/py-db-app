@@ -74,6 +74,10 @@
                             <div class="form-check" style="color: green">
                                 Answer is correct: {{ choice.choice }}
                             </div>
+                            {% elif choices|is_user_choice:choice.id and not choice.is_correct %}
+                            <div class="form-check" style="color: red">
+                                Answer is wrong: {{ choice.choice }}
+                            </div>
                             {% else %}
                             <div class="form-check">
                                 {{ choice.choice }}
