@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Home Online Course</title>
+</head>
+
+<body>
+
+    <div class="container" style="text-align: center; margin: 50px auto">
+        <div class="alert-info alert">
+            <h1 style="text-decoration: underline">Welcome to Online Courses</h1><br>
+            <h4>Go to your respective page</h4><br>
+            <a class="btn btn-primary" href="{% url 'admin:index' %}" style="margin: 8px">Admin</a>
+            <a class="btn btn-primary" href="{% url 'onlinecourse:index' %}" style="margin: 8px">Online Courses</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
