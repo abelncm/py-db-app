@@ -27,7 +27,7 @@ SECRET_KEY = 'aay0j_9b&ky3a7(8m8il+-1ud(scw12@w5!+5-=gsk6ynzi0ls'
 DEBUG = True
 
 # <HINT> add your cloud host here
-ALLOWED_HOSTS = ['cv-2022-sentiment-analyzer-anxious-gnu-uf.mybluemix.net', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['cv-2022-onlinecourse.us-south.cf.appdomain.cloud', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'myproject.urls'
